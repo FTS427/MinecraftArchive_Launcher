@@ -91,10 +91,10 @@ namespace wonderlab.ViewModels.Pages {
             if (string.IsNullOrEmpty(GlobalResources.LaunchInfoData.GameDirectoryPath)) {
                 HasGameCore = 1;
                 if (GlobalResources.LaunchInfoData.GameDirectorys.Any()) {
-                    "GameDirectoryError1".GetText().ShowMessage("提示",
+                    "GameDirectoryError1".GetText().ShowMessage("Tip",
                         OpenLaunchConfigAction);
                 } else {
-                    "GameDirectoryError2".GetText().ShowMessage("提示",
+                    "GameDirectoryError2".GetText().ShowMessage("Tip",
                         OpenLaunchConfigAction);
                 }
                 return;
@@ -115,7 +115,7 @@ namespace wonderlab.ViewModels.Pages {
                     await DialogHost.Show(new AccountDialogContent(), "dialogHost");
                     return;
                 } else if (user.Count <= 0) {
-                    "未添加任何账户，无法继续启动步骤，您可以点击此条以转到账户中心！"
+                    "未添加任何账户，无法继续启动，点击此处转到账户中心添加游戏帐户"
                         .ShowMessage("提示", async () => {
                             OpenActionCenterAction();
                             await Task.Delay(1000);
@@ -149,7 +149,7 @@ namespace wonderlab.ViewModels.Pages {
 
             try {
                 if (NotificationCenterPage.ViewModel.Notifications.Any(x => x.NotificationType is NotificationType.Install && x.Title.Contains(SelectGameCoreId))) {
-                    $"检测到游戏核心 \"{SelectGameCoreId}\" 仍有安装任务正在进行，无法进行启动步骤！"
+                    $"检测到游戏核心 \"{SelectGameCoreId}\" 仍有安装任务正在进行，无法启动！"
                         .ShowMessage();
 
                     return;
@@ -208,7 +208,7 @@ namespace wonderlab.ViewModels.Pages {
             }
 
             void PreConfigProcessingAsync() {
-                data.Progress = "开始启动步骤 - 0%";
+                data.Progress = "正在启动 - 0%";
                 bool flag = !GlobalResources.LaunchInfoData.IsAutoSelectJava && GlobalResources.LaunchInfoData.JavaRuntimePath.Equals(null);//手动选择 Java 的情况
                 javaInfo = flag ? GlobalResources.LaunchInfoData.JavaRuntimePath! : GetCurrentJava();//当选择手动时没有任何问题就手动选择，其他情况一律使用自动选择
                 config = new LaunchConfig() {
@@ -230,7 +230,7 @@ namespace wonderlab.ViewModels.Pages {
             }
 
             void PreUIProcessingAsync() {
-                $"开始尝试启动游戏 \"{SelectGameCoreId}\"，您可以点击此条进入通知中心以查看启动进度！".ShowMessage(App.CurrentWindow.NotificationCenter.Open);
+                $"开始尝试启动游戏 \"{SelectGameCoreId}\"，点击此处进入通知中心查看启动进度！".ShowMessage(App.CurrentWindow.NotificationCenter.Open);
                 data = new(NotificationType.Launch) {
                     Title = $"游戏 {SelectGameCoreId} 的启动任务"
                 };
@@ -376,7 +376,7 @@ namespace wonderlab.ViewModels.Pages {
 
         public async void OpenActionCenterAction() {
             var back = App.CurrentWindow.Back;
-            if (GlobalResources.LauncherData.BakgroundType is not "亚克力背景" or "云母背景（Win11+）") {
+            if (GlobalResources.LauncherData.BakgroundType is not "亚克力" or "云母(Win11)") {
                 OpacityChangeAnimation opacity = new(false) {
                     RunValue = 0,
                 };
@@ -392,7 +392,7 @@ namespace wonderlab.ViewModels.Pages {
 
         public void OpenConsoleAction() {
             var back = App.CurrentWindow.Back;
-            if (GlobalResources.LauncherData.BakgroundType is not "亚克力背景" or "云母背景（Win11+）") {
+            if (GlobalResources.LauncherData.BakgroundType is not "亚克力" or "云母(Win11)") {
                 OpacityChangeAnimation opacity = new(false) {
                     RunValue = 0,
                 };
@@ -406,7 +406,7 @@ namespace wonderlab.ViewModels.Pages {
 
         public void OpenLaunchConfigAction() {
             var back = App.CurrentWindow.Back;
-            if (GlobalResources.LauncherData.BakgroundType is not "亚克力背景" or "云母背景（Win11+）") {
+            if (GlobalResources.LauncherData.BakgroundType is not "亚克力" or "云母(Win11)") {
                 OpacityChangeAnimation opacity = new(false) {
                     RunValue = 0,
                 };

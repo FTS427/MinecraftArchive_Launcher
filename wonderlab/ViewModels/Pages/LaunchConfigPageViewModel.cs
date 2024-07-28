@@ -133,7 +133,7 @@ namespace wonderlab.ViewModels.Pages {
         {
             "最小化",
             "无任何行为",
-            "关闭 WonderLab",
+            "关闭启动器",
         };
 
         public async void LoadJavaAction() {
@@ -189,7 +189,7 @@ namespace wonderlab.ViewModels.Pages {
                 Javas.Add(javaInfo);
                 GlobalResources.LaunchInfoData.JavaRuntimes.Add(JavaUtil.GetJavaInfo(path));
                 CurrentJava = javaInfo;
-                Trace.WriteLine($"[信息] 这是第 {Javas.Count} 找到的 Java 运行时，完整路径为 {path}");
+                Trace.WriteLine($"[Info] 这是第 {Javas.Count} 找到的 Java 运行时，完整路径为 {path}");
             }
         }
 

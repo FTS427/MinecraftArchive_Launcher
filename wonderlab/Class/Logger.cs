@@ -21,21 +21,21 @@ namespace wonderlab.Class {
         }
 
         public Logger Info(string message) {
-            string log = $"[{SystemUtils.GetPlatformName()}][信息] {message}";
+            string log = $"[{SystemUtils.GetPlatformName()}][Info] {message}";
             Logs.Add(log);
             Trace.WriteLine(log);
             return this;
         }
 
         public Logger Error(string message) {
-            string log = $"[{SystemUtils.GetPlatformName()}][错误] {message}";
+            string log = $"[{SystemUtils.GetPlatformName()}][Error] {message}";
             Logs.Add(log);
             Trace.WriteLine(log);
             return this;
         }
 
         public Logger Warning(string message) {
-            string log = $"[{SystemUtils.GetPlatformName()}][警告] {message}";
+            string log = $"[{SystemUtils.GetPlatformName()}][Warn] {message}";
             Logs.Add(log);
             Trace.WriteLine(log);
             return this;
@@ -60,7 +60,7 @@ namespace wonderlab.Class {
             }
 
             var today = DateTime.Now;
-            await File.WriteAllLinesAsync(Path.Combine(LogsPath, $"运行日志漂流瓶 {today:yyyy-MM-dd-HH-mm-ss}.log"), Logs);
+            await File.WriteAllLinesAsync(Path.Combine(LogsPath, $"LauncherLog{today:yyyy-MM-dd-HH-mm-ss}.log"), Logs);
         }
     }
 }

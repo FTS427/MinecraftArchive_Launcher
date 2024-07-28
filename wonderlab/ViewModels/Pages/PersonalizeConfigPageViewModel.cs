@@ -19,7 +19,7 @@ namespace wonderlab.ViewModels.Pages {
 
             try {
                 CurrentAccentColor = GlobalResources.LauncherData.AccentColor;
-                IsImageVisible = GlobalResources.LauncherData.BakgroundType is "图片背景";
+                IsImageVisible = GlobalResources.LauncherData.BakgroundType is "图片";
                 CurrentBakgroundType = GlobalResources.LauncherData.BakgroundType;
                 CurrentThemeType = GlobalResources.LauncherData.ThemeType;
                 CurrentParallaxType = GlobalResources.LauncherData.ParallaxType;
@@ -36,19 +36,19 @@ namespace wonderlab.ViewModels.Pages {
             }
 
             if (e.PropertyName is nameof(CurrentBakgroundType)) {
-                IsImageVisible = CurrentBakgroundType is "图片背景";
+                IsImageVisible = CurrentBakgroundType is "图片";
                 MainWindow.ViewModel.IsLoadImageBackground = IsImageVisible;
                 GlobalResources.LauncherData.BakgroundType = CurrentBakgroundType;
-                MainWindow.ViewModel.IsLoadColorBackground = CurrentBakgroundType is "主题色背景";
+                MainWindow.ViewModel.IsLoadColorBackground = CurrentBakgroundType is "主题色";
 
                 List<WindowTransparencyLevel> effectBackground = new();
-                if (CurrentBakgroundType is "亚克力背景") {
+                if (CurrentBakgroundType is "亚克力") {
                     effectBackground.Add(WindowTransparencyLevel.AcrylicBlur);
                     App.CurrentWindow.TransparencyLevelHint = effectBackground;
                     MainWindow.ViewModel.IsLoadAcrylicBackground = true;
                 }
 
-                bool isLoadMica = CurrentBakgroundType.Contains("云母背景");
+                bool isLoadMica = CurrentBakgroundType.Contains("云母");
                 if (isLoadMica) {
                     effectBackground.Add(WindowTransparencyLevel.Mica);
                     App.CurrentWindow.TransparencyLevelHint = effectBackground;
@@ -82,15 +82,15 @@ namespace wonderlab.ViewModels.Pages {
         public string CurrentParallaxType { get; set; }
 
         public ObservableCollection<string> BakgroundTypes => new() {
-            "主题色背景",
-            "图片背景",
-            "亚克力背景",
-            "云母背景（Win11+）",
+            "主题色",
+            "图片",
+            "亚克力",
+            "云母(Win11)",
         };
 
         public ObservableCollection<string> ThemeTypes => new() {
-            "亮色主题",
-            "暗色主题",
+            "亮色",
+            "暗色",
         };
 
         public ObservableCollection<string> ParallaxTypes => new() {

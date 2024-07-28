@@ -27,9 +27,9 @@ namespace wonderlab.ViewModels.Windows {
             ThreadPool.QueueUserWorkItem(async x => {
                 var launcherData = GlobalResources.LauncherData;
 
-                IsLoadImageBackground = launcherData.BakgroundType is "图片背景";
-                IsLoadColorBackground = launcherData.BakgroundType is "主题色背景";
-                IsLoadAcrylicBackground = launcherData.BakgroundType is "亚克力背景";
+                IsLoadImageBackground = launcherData.BakgroundType is "图片";
+                IsLoadColorBackground = launcherData.BakgroundType is "主题色";
+                IsLoadAcrylicBackground = launcherData.BakgroundType is "亚克力";
                 string imagePath = launcherData.ImagePath;
                 
                 if (IsLoadImageBackground && imagePath.IsFile()) {
@@ -43,7 +43,7 @@ namespace wonderlab.ViewModels.Windows {
                         App.CurrentWindow.TransparencyLevelHint = effectBackground;
                     }
 
-                    bool isLoadMica = launcherData.BakgroundType.Contains("云母背景");
+                    bool isLoadMica = launcherData.BakgroundType.Contains("云母");
                     if (isLoadMica) {
                         effectBackground.Add(WindowTransparencyLevel.Mica);
                         App.CurrentWindow.TransparencyLevelHint = effectBackground;
@@ -52,7 +52,6 @@ namespace wonderlab.ViewModels.Windows {
 
                 APIManager.Current = launcherData.CurrentDownloadAPI switch {
                     DownloadApiType.Bmcl => APIManager.Bmcl,
-                    DownloadApiType.Mcbbs => APIManager.Mcbbs,
                     DownloadApiType.Mojang => APIManager.Mojang,
                     _ => APIManager.Mcbbs,
                 };
@@ -66,7 +65,7 @@ namespace wonderlab.ViewModels.Windows {
                     Dispatcher.Post(async () => {
                         UpdateDialogContent content = new(result,
                             string.Join("\n", result["messages"].AsArray()),
-                            $"于 {time} 发布，发行分支：{GlobalResources.LauncherData.IssuingBranch}");
+                            $"于 {time} 发布");
 
                         await Task.Delay(500);
                         await DialogHost.Show(content, "dialogHost");
@@ -96,11 +95,11 @@ namespace wonderlab.ViewModels.Windows {
         [Reactive]
         public bool IsLoadAcrylicBackground { get; set; } = false;
 
-        public string Version => $"{GlobalResources.LauncherData.IssuingBranch} {UpdateUtils.LocalVersion}";
+        public string Version => "1.2.8";
 
         private void OnPropertyChanged(object? sender, PropertyChangedEventArgs e) {
             if (e.PropertyName == nameof(CurrentPage)) {
-                Trace.WriteLine("[信息] 活动页面已改变");
+                Trace.WriteLine("[Info] 活动页面已改变");
             }
         }
     }

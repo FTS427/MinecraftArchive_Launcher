@@ -46,7 +46,7 @@
 	<sr:String x:Key="Developer2">前端开发：西路Baka</sr:String>
 	<sr:String x:Key="Developer3">后端开发：Ddggdd135，西路Baka，[mailset@arch ~ ]$</sr:String>
 	<sr:String x:Key="InspirationSource">灵感出处</sr:String>
-	<sr:String x:Key="UIReference1">UI 风格参考自碧蓝档案</sr:String>
+	<sr:String x:Key="UIReference1">UI 风格参考自 Blue Archive</sr:String>
 	<sr:String x:Key="UIReference2">部分 UI 参考自   </sr:String>
 	<sr:String x:Key="IconReference">图标 引用自 GBCLV3，Iconfont</sr:String>
   <!--ActionCenterPage-->

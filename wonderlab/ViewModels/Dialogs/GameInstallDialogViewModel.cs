@@ -128,22 +128,22 @@ namespace wonderlab.ViewModels.Dialogs {
 
                     if (i.Data.ModLoaderType == ModLoaderType.Forge && (currentmodLoaderType == ModLoaderType.Fabric ||
                         currentmodLoaderType == ModLoaderType.Quilt)) {
-                        "Forge 无法与此加载器同时安装，WonderLab已自动将其移除安装队列！".ShowMessage("提示");
+                        "Forge 无法与此加载器同时安装，已自动将其移除安装队列！".ShowMessage("Tip");
                         BackInstallerSelectAction();
                         return;
                     } else if (i.Data.ModLoaderType == ModLoaderType.OptiFine && (currentmodLoaderType == ModLoaderType.Fabric ||
                           currentmodLoaderType == ModLoaderType.Quilt)) {
-                        "Optifine 无法与此加载器同时安装，WonderLab已自动将其移除安装队列！".ShowMessage("提示");
+                        "Optifine 无法与此加载器同时安装，已自动将其移除安装队列！".ShowMessage("Tip");
                         BackInstallerSelectAction();
                         return;
                     } else if (i.Data.ModLoaderType == ModLoaderType.Fabric && (currentmodLoaderType == ModLoaderType.Forge ||
                           currentmodLoaderType == ModLoaderType.Quilt || currentmodLoaderType == ModLoaderType.OptiFine)) {
-                        "Fabric 无法与此加载器同时安装，WonderLab已自动将其移除安装队列！".ShowMessage("提示");
+                        "Fabric 无法与此加载器同时安装，已自动将其移除安装队列！".ShowMessage("Tip");
                         BackInstallerSelectAction();
                         return;
                     } else if (i.Data.ModLoaderType == ModLoaderType.Quilt && (currentmodLoaderType == ModLoaderType.Forge ||
                           currentmodLoaderType == ModLoaderType.Fabric || currentmodLoaderType == ModLoaderType.OptiFine)) {
-                        "Quilt 无法与此加载器同时安装，WonderLab已自动将其移除安装队列！".ShowMessage("提示");
+                        "Quilt 无法与此加载器同时安装，已自动将其移除安装队列！".ShowMessage("Tip");
                         BackInstallerSelectAction();
                         return;
                     }
@@ -217,7 +217,7 @@ namespace wonderlab.ViewModels.Dialogs {
 
             try {
                 if (CurrentGameCore is null) {
-                    "无法进行安装，因为您还未选择任何游戏核心！".ShowMessage("提示");
+                    "无法进行安装，因为未选择游戏核心！".ShowMessage("Tip");
                     return;
                 }
 
@@ -230,7 +230,7 @@ namespace wonderlab.ViewModels.Dialogs {
                     customId = CurrentGameCore.Id;
                 } else if (CurrentModLoaders.Count == 1 && currentmodloaderType is ModLoaderType.Forge) {
                     if (GlobalResources.LaunchInfoData.JavaRuntimePath.JavaPath.IsNull() && !GlobalResources.LaunchInfoData.JavaRuntimePath.JavaPath.ToJavaw().IsFile()) {
-                        "无法继续安装，因为未选择任何 Java！".ShowMessage();
+                        "无法继续安装，因为未选择 Java！".ShowMessage();
                         return;
                     }
 
@@ -249,7 +249,7 @@ namespace wonderlab.ViewModels.Dialogs {
                     installer = await Task.Run(() => new QuiltInstaller(GlobalResources.LaunchInfoData.GameDirectoryPath, (installerdata.ModLoaderBuild as QuiltInstallBuild)!, customId));
                 } else if (CurrentModLoaders.Count == 1 && currentmodloaderType is ModLoaderType.OptiFine) {
                     if (!GlobalResources.LaunchInfoData.JavaRuntimePath.JavaPath.ToJavaw().IsFile()) {
-                        "无法继续安装，因为未选择任何 Java！".ShowMessage();
+                        "无法继续安装，因为未选择 Java！".ShowMessage();
                         return;
                     }
 
@@ -264,7 +264,7 @@ namespace wonderlab.ViewModels.Dialogs {
                 }
 
                 data.Title = $"游戏 {customId} 的安装任务";
-                $"开始安装游戏 {customId}！此过程不会很久，坐和放宽，您可以点击此条进入通知中心以查看下载进度！".ShowMessage(App.CurrentWindow.NotificationCenter.Open);
+                $"开始安装游戏 {customId}！请坐和放宽，点击此处查看下载进度！".ShowMessage(App.CurrentWindow.NotificationCenter.Open);
                 NotificationCenterPage.ViewModel.Notifications.Add(data);
                 await Task.Delay(2000);
                 data.TimerStart();
@@ -306,7 +306,7 @@ namespace wonderlab.ViewModels.Dialogs {
 
         public async void CompositeGameCoreAction(NotificationViewData data) {
             if (!GlobalResources.LaunchInfoData.JavaRuntimePath.JavaPath.ToJavaw().IsFile()) {
-                "无法继续安装，因为未选择任何 Java！".ShowMessage();
+                "无法继续安装，因为未选择 Java！".ShowMessage();
             }
 
             NotificationCenterPage.ViewModel.Notifications.Add(data);
@@ -315,7 +315,7 @@ namespace wonderlab.ViewModels.Dialogs {
             var customId = $"{forgedata.GameCoreVersion}-{forgedata.ModLoader.ToLower()}-{forgedata.Id}";
             data.Title = $"游戏 {customId} 的安装任务";
 
-            $"开始安装游戏 {customId}！此过程不会很久，坐和放宽，您可以点击此条进入通知中心以查看下载进度！".ShowMessage(() => {
+            $"开始安装游戏 {customId}！请坐和放宽，点击此处查看下载进度！".ShowMessage(() => {
                 App.CurrentWindow.NotificationCenter.Open();
             });
 

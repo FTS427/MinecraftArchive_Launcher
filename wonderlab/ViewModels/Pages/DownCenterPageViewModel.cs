@@ -161,9 +161,9 @@ namespace wonderlab.ViewModels.Pages {
             }
             catch (Exception ex) {
                 if (ex.Message.Contains("Timeout of 30 seconds elapsing")) {
-                    "WonderLab 在获取 Modrinth 资源时连接超时，请检查您的网络是否有问题！".ShowInfoDialog("拉取失败");
+                    "获取 Modrinth 资源超时，请检查您的网络".ShowInfoDialog("拉取失败");
                 } else {
-                    $"WonderLab 在获取 Modrinth 资源时遭遇未知异常，信息如下：{ex}".ShowInfoDialog("程序遭遇异常");
+                    $"获取 Modrinth 资源时遭遇未知异常，信息如下：{ex}".ShowInfoDialog("程序遭遇异常");
                 }
             }
         }
@@ -182,9 +182,9 @@ namespace wonderlab.ViewModels.Pages {
             }
             catch (Exception ex) {
                 if (ex.Message.Contains("Timeout of 30 seconds elapsing")) {
-                    "WonderLab 在获取 Curseforge 资源时连接超时，请检查您的网络是否有问题！".ShowInfoDialog("拉取失败");
+                    "获取 Curseforge 资源超时，请检查您的网络".ShowInfoDialog("拉取失败");
                 } else {
-                    $"WonderLab 在获取 Curseforge 资源时遭遇未知异常，信息如下：{ex}".ShowInfoDialog("程序遭遇异常");
+                    $"获取 Curseforge 资源时遭遇未知异常，信息如下：{ex}".ShowInfoDialog("程序遭遇异常");
                 }
             }
         }
@@ -199,7 +199,7 @@ namespace wonderlab.ViewModels.Pages {
                             item.Value.CurseForgeId = item.Value.Chinese.Split(" (")[1].Split(")").First().Trim();
                             searchFilter = item.Value.CurseForgeId;
 
-                            Trace.WriteLine($"[信息] 新的 CurseForgeId 值为 {searchFilter}");
+                            Trace.WriteLine($"[Info] 新的 CurseForgeId 值为 {searchFilter}");
                             break;
                         } else if (SearchFilter.IsChinese()) searchFilter = item.Value.CurseForgeId.Replace("-", " ");
                     }

@@ -39,7 +39,7 @@ namespace wonderlab.ViewModels.Pages {
         public bool HasNotification { get; set; } = true;
 
         private void OnPropertyChanged(object? sender, System.ComponentModel.PropertyChangedEventArgs e) {
-            Trace.WriteLine($"[信息] 更改的属性为 {e.PropertyName}");
+            Trace.WriteLine($"[Info] 更改的属性为 {e.PropertyName}");
         }
 
         public void CloseLauncherAction() {

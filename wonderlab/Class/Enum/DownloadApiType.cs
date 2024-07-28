@@ -8,6 +8,5 @@ namespace wonderlab.Class.Enum {
     public enum DownloadApiType {
         Mojang,
         Bmcl,
-        Mcbbs
     }
 }

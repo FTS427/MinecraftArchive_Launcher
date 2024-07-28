@@ -18,19 +18,16 @@ namespace wonderlab.Class.Models
         public Color AccentColor { get; set; } = Color.FromRgb(255, 185, 0);
         
         [JsonPropertyName("bakgroundType")]
-        public string BakgroundType { get; set; } = "主题色背景";
+        public string BakgroundType { get; set; } = "主题色";
 
         [JsonPropertyName("themeType")]
-        public string ThemeType { get; set; } = "亮色主题";
+        public string ThemeType { get; set; } = "亮色";
 
         [JsonPropertyName("parallaxType")]
         public string ParallaxType { get; set; } = "无";
 
         [JsonPropertyName("imagePath")]
         public string ImagePath { get; set; } = string.Empty;
-
-        [JsonPropertyName("issuingBranch")]
-        public IssuingBranch IssuingBranch { get; set; } = IssuingBranch.Lsaac;
 
         [JsonPropertyName("currentdownloadAPI")]
         public DownloadApiType CurrentDownloadAPI { get; set; } = DownloadApiType.Mojang;

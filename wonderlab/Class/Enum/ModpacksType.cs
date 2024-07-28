@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 namespace wonderlab.Class.Enum
 {
     public enum ModpacksType {
-        Mcbbs,
         Curseforge,
         Modrinth,
         Unknown

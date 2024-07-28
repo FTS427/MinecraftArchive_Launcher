@@ -19,7 +19,7 @@ namespace wonderlab.ViewModels {
             App.CurrentWindow.OpenTopBar();
             new HomePage().Navigation();
 
-            if (GlobalResources.LauncherData.BakgroundType is not "亚克力背景" or "云母背景（Win11+）") {
+            if (GlobalResources.LauncherData.BakgroundType is not "亚克力" or "云母(Win11)") {
                 OpacityChangeAnimation animation = new(true);
                 animation.RunAnimation(App.CurrentWindow.Back);
             }

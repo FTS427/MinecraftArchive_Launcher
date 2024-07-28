@@ -26,10 +26,6 @@ namespace wonderlab.Class.Utils {
             using var zipItems = ZipFile.OpenRead(path);
 
             foreach (var zipItem in zipItems.Entries) {
-                if (zipItem.FullName.Contains("mcbbs.packmeta")) {
-                    return ModpacksType.Mcbbs;
-                }
-
                 if (zipItem.FullName.Contains("modrinth.index.json")) {
                     return ModpacksType.Modrinth;
                 }
@@ -43,9 +39,7 @@ namespace wonderlab.Class.Utils {
         }
 
         public static async ValueTask ModpacksInstallAsync(string path, ModpacksType type) {
-            if (type == ModpacksType.Mcbbs) {
-                await McbbsModpacksInstallAsync(path);
-            } else if (type == ModpacksType.Curseforge) {
+            if (type == ModpacksType.Curseforge) {
                 await CurseforgeModpacksInstallAsync(path);
             } else if (type == ModpacksType.Modrinth) {
                 await ModrinthModpacksInstallAsync(path);

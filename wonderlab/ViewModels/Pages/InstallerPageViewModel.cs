@@ -139,7 +139,7 @@ namespace wonderlab.ViewModels.Pages {
                 customId.Append($"-{item.ModLoader}_{item.ModLoaderBuild.ToString()}");
             }
 
-            $"开始安装游戏 {customId}！此过程不会很久，坐和放宽，您可以点击此条的跳转按钮进入通知中心以查看下载进度！"
+            $"开始安装游戏 {customId}！请坐和放宽，点击此处跳转进入通知中心查看安装进度！"
                 .ShowMessage(App.CurrentWindow.NotificationCenter.Open);
 
             NotificationViewData data = new(NotificationType.Install) { 

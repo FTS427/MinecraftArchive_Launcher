@@ -86,7 +86,7 @@ namespace wonderlab.ViewModels.Dialogs {
                     UserType = account.Type
                 }, true);
 
-                $"账户 {account.Name} 已成功添加至启动器".ShowMessage();
+                $"成功添加账户 {account.Name}".ShowMessage();
                 await Task.Run(() => {
                     AccountPage.ViewModel.GameAccounts = CacheResources.Accounts;
                 });
@@ -135,7 +135,7 @@ namespace wonderlab.ViewModels.Dialogs {
 
         public async void YggdrasilAuthAction() {
             if (!RegexUtils.EmailCheck.IsMatch(Email)) {
-                "不正确的邮箱地址，请校正后再次尝试！".ShowMessage("提示");
+                "优香错误，请检查后重试！".ShowMessage("Tip");
                 return;
             }
 
@@ -160,7 +160,7 @@ namespace wonderlab.ViewModels.Dialogs {
                     .ShowInfoDialog("登录失败");
             }
 
-            $"已成功将 {Email} 名下所有的账户全部添加至启动器".ShowMessage();
+            $"已成功添加 {Email} 名下所有的全部账户".ShowMessage();
             CloseAction();
         }
 
@@ -174,7 +174,7 @@ namespace wonderlab.ViewModels.Dialogs {
                 Uuid = account.Uuid.ToString(),
             }, true);
 
-            $"账户 {account.Name} 已成功添加至启动器".ShowMessage();
+            $"已成功添加账户 {account.Name}".ShowMessage();
             CloseAction();
         }
     }

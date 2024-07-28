@@ -25,7 +25,7 @@ namespace wonderlab.ViewModels.Pages {
                     await Task.Run(() => ResourcePacks = result.ToObservableCollection());
                 } else HasResourcePack = 1;
 
-                Trace.WriteLine($"[信息] 共有 {ResourcePacks.Count} 个资源包");
+                Trace.WriteLine($"[Info] 共有 {ResourcePacks.Count} 个资源包");
             }
         }
 

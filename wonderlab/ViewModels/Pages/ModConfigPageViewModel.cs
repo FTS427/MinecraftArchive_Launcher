@@ -37,7 +37,7 @@ namespace wonderlab.ViewModels.Pages {
                     }
                 } else HasModPack = 1;
 
-                Trace.WriteLine($"[信息] 共有 {ModPacks.Count} 个模组");
+                Trace.WriteLine($"[Info] 共有 {ModPacks.Count} 个模组");
             }
         }
 

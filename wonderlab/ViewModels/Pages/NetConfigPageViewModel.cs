@@ -46,39 +46,12 @@ namespace wonderlab.ViewModels.Pages {
 
             //下载源
             TestList.Add(new WebConnectionTestModel("https://bmclapi2.bangbang93.com"));
-            TestList.Add(new WebConnectionTestModel("https://download.mcbbs.net"));
             TestList.Add(new WebConnectionTestModel("http://launchermeta.mojang.com"));
 
             //皮肤
             TestList.Add(new WebConnectionTestModel("http://textures.minecraft.net"));
             TestList.Add(new WebConnectionTestModel("https://sessionserver.mojang.com"));
             TestList.Add(new WebConnectionTestModel("https://www.minecraft.net", "minecraft.net"));
-
-            //更新服务
-            TestList.Add(new WebConnectionTestModel("http://43.136.86.16:8888/", "update.wonderapi.com"));
-        }
-
-        public void SelectLsaacAction() {
-            GlobalResources.LauncherData.IssuingBranch = IssuingBranch.Lsaac;
-        }
-
-        public void SelectAlbertAction() {
-            GlobalResources.LauncherData.IssuingBranch = IssuingBranch.Albert;
-        }
-
-        public void SelectOfficialAction() {
-            GlobalResources.LauncherData.CurrentDownloadAPI = DownloadApiType.Mojang;
-            APIManager.Current = APIManager.Mojang;
-        }
-
-        public void SelectMcbbsAction() {
-            GlobalResources.LauncherData.CurrentDownloadAPI = DownloadApiType.Mcbbs;
-            APIManager.Current = APIManager.Mcbbs;
-        }
-
-        public void SelectBmclAction() {
-            GlobalResources.LauncherData.CurrentDownloadAPI = DownloadApiType.Bmcl;
-            APIManager.Current = APIManager.Bmcl;
         }
     }
 }
