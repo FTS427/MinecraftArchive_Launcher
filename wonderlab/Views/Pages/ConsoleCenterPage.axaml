@@ -20,7 +20,7 @@
 						<Setter Property="Height" Value="35"/>
 						<Setter Property="ClipToBounds" Value="False"/>
 						<Setter Property="ContextMenu">
-							<ContextMenu PlacementMode="Right">
+							<ContextMenu Placement="Right">
 								<MenuItem Command="{Binding	MinecraftStopAction}"
 										  Header="{DynamicResource ForceStop}"/>
 							</ContextMenu>

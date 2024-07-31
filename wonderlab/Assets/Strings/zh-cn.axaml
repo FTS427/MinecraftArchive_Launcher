@@ -34,28 +34,14 @@
   <sr:String x:Key="CreateAccount">创建或添加新的游戏账户</sr:String>
   <sr:String x:Key="DeleteAccount">删除此账户</sr:String>
   <!--AboutPage-->
-	<sr:String x:Key="Copyright">© Blessing Studio(2021-2023) 保留所有权利</sr:String>
-	<sr:String x:Key="UsingLib">项目所使用的开源组件库</sr:String>
+	<sr:String x:Key="Copyright">© Blessing Studio(2021-2024) 保留所有权利</sr:String>
 	<sr:String x:Key="Thanks">鸣谢</sr:String>
-	<sr:String x:Key="Thank1">感谢 泽托维尔克 赞助的服务器</sr:String>
-	<sr:String x:Key="Thank2">感谢开发过程中 Natsurainko、llr下一你了亲并 的帮助</sr:String>
-	<sr:String x:Key="Thank3">感谢测试期中 ic58N 为启动器的 Mac 端找到了大量 Bug</sr:String>
-	<sr:String x:Key="Thank4">感谢测试期中 FTS427 为启动器的 Linux 端找到了大量 Bug</sr:String>
-	<sr:String x:Key="Developers">开发团队</sr:String>
-	<sr:String x:Key="Developer1">UI 审查：Starcloudsea</sr:String>
-	<sr:String x:Key="Developer2">前端开发：西路Baka</sr:String>
-	<sr:String x:Key="Developer3">后端开发：Ddggdd135，西路Baka，[mailset@arch ~ ]$</sr:String>
-	<sr:String x:Key="InspirationSource">灵感出处</sr:String>
-	<sr:String x:Key="UIReference1">UI 风格参考自 Blue Archive</sr:String>
-	<sr:String x:Key="UIReference2">部分 UI 参考自   </sr:String>
-	<sr:String x:Key="IconReference">图标 引用自 GBCLV3，Iconfont</sr:String>
+	<sr:String x:Key="Thank1">ALL Thing Powered By WonderLab.Override!</sr:String>
+
   <!--ActionCenterPage-->
   <sr:String x:Key="ResDownload">资源下载</sr:String>
   <sr:String x:Key="LatestVersion">最新版本</sr:String>
-  <sr:String x:Key="ServerBox">服务器匣子</sr:String>
   <sr:String x:Key="Settings">设置</sr:String>
-  <sr:String x:Key="WIP">爆炸电台（WIP）</sr:String>
-  <sr:String x:Key="Playing">正在播放：无</sr:String>
   <!--ConsoleCenterPage-->
   <sr:String x:Key="ForceStop">强制关闭游戏</sr:String>
   <sr:String x:Key="ViewLogs">点击左侧进程卡片以查看日志</sr:String>

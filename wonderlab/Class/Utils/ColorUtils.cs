@@ -801,9 +801,7 @@ public struct ColorUtils : IEquatable<ColorUtils> {
         return Color.FromArgb(a, r, g, b);
     }
 
-    public static implicit operator ColorUtils(Color c) {
-        return FromUInt(c.ToUint32());
-    }
+    public static implicit operator ColorUtils(Color c) => FromUInt(c.ToUint32());
 
     public static bool AreColorsClose(ColorUtils col1, ColorUtils col2, float tolerance = 0.03f) {
         return false;

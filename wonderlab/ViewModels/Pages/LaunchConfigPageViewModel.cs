@@ -91,7 +91,7 @@ namespace wonderlab.ViewModels.Pages {
         public bool IsAutoSelectJava { get; set; } = false;
 
         [Reactive]
-        public bool IsAutoGetMemory { get; set; } = true;
+        public bool IsAutoGetMemory { get; set; } = false;
 
         [Reactive]
         public bool IsLoadJavaNow { get; set; } = false;

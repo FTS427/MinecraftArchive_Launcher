@@ -146,8 +146,12 @@
 								VerticalAlignment="Bottom"/>
 
 						<StackPanel Margin="15 0" Grid.Row="2" Orientation="Horizontal" Spacing="100">
-							<RadioButton Name="autoJavaSelectOpen" Content="开" Command="{Binding OpenAutoSelectJavaAction}"/>
-							<RadioButton Name="autoJavaSelectClose" Content="关" Command="{Binding CloseAutoSelectJavaAction}"/>
+							<RadioButton Name="autoJavaSelectOpen"
+										 Content="开"
+										 Command="{Binding OpenAutoSelectJavaAction}"/>
+							<RadioButton Name="autoJavaSelectClose"
+										 Content="关"
+										 Command="{Binding CloseAutoSelectJavaAction}"/>
 						</StackPanel>
 					</Grid>
 				</Border>
@@ -184,7 +188,7 @@
 								 Watermark="最大内存"
 								 VerticalAlignment="Top"
 								 HorizontalAlignment="Left"
-								 IsEnabled="{Binding IsAutoGetMemory}"
+								 IsEnabled="{Binding IsAutoGetMemory,Converter={StaticResource BoolReverseConverter}}"
 								 Text="{Binding	MaxMemory,Converter={StaticResource ClassToInt32Converter}}"/>
 
 						<Grid Grid.Row="3"
@@ -306,9 +310,11 @@
 								VerticalAlignment="Bottom"/>
 
 						<StackPanel VerticalAlignment="Top" Margin="15 5" Grid.Row="2" Orientation="Horizontal" Spacing="10">
+							<TextBlock Text="长" HorizontalAlignment="Center"
+									   VerticalAlignment="Center"/>
 							<TextBox MinWidth="100"
 		                             Text="{Binding WindowWidth,Converter={StaticResource ClassToInt32Converter}}"/>
-							<TextBlock Text="X" HorizontalAlignment="Center"
+							<TextBlock Text="宽" HorizontalAlignment="Center"
 									   VerticalAlignment="Center"/>
 							<TextBox MinWidth="100"
 		                             Text="{Binding	WindowHeight,Converter={StaticResource ClassToInt32Converter}}"/>

@@ -36,7 +36,7 @@
 								<Setter Property="Height" Value="40"/>
 								<Setter Property="Margin" Value="15 5"/>
 								<Setter Property="ContextMenu">
-									<ContextMenu PlacementMode="Right">
+									<ContextMenu Placement="Right">
 										<MenuItem Command="{Binding	MinecraftStopAction}" Header="强制关闭游戏"/>
 									</ContextMenu>
 								</Setter>

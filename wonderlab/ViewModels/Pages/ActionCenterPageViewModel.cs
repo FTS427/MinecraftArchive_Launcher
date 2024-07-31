@@ -103,9 +103,5 @@ namespace wonderlab.ViewModels.Pages {
         public void OpenUserPageAction() {
             new AccountPage().Navigation();
         }
-
-        public void OpenServerFindPageAction() {
-            new ServerFindPage().Navigation();
-        }
     }
 }

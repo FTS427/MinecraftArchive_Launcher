@@ -1,5 +1,4 @@
 ﻿using MinecraftLaunch.Modules.Utils;
-using MinecraftProtocol.Server;
 using System.Text.Json.Serialization;
 using System.Collections.Generic;
 
@@ -35,12 +34,6 @@ namespace wonderlab.Class.Models
         [JsonPropertyName("modinfo")]
         public ServerPingModInfo ModInfo { get; set; }
 
-        [JsonPropertyName("favicon")] 
-        public string Icon { get; set; }
-        public static implicit operator Status(PingPayload ping)
-        {
-            return new(ping.ToJson());
-        }
     }
 
     public record Player {   

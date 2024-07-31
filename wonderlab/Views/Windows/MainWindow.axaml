@@ -9,7 +9,7 @@
 		xmlns:wp="using:wonderlab.Views.Pages"	     
 		xmlns:wcb="using:wonderlab.control.Controls.Bar"
 		xmlns:wcc="using:wonderlab.control.Controls"
-        Title="WonderLab"
+        Title="MinecraftArchive"
 		DragDrop.AllowDrop="True"		
 		ExtendClientAreaToDecorationsHint="True"
 		WindowStartupLocation="CenterScreen"
@@ -238,7 +238,7 @@
 							<RowDefinition Height="2"/>
 							<RowDefinition Height="Auto"/>
 						</Grid.RowDefinitions>
-						<TextBlock Text="WonderLab"
+						<TextBlock Text="MinecraftArchive"
 								   FontSize="16"
 							 	   FontWeight="SemiBold"/>
 

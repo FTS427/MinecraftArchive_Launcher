@@ -159,11 +159,6 @@
 						</Button>
 					</StackPanel>
 
-					<Button Width="370" HorizontalAlignment="Left"
-							Command="{Binding OpenServerFindPageAction}"
-							Grid.Row="2" Content="{DynamicResource ServerBox}" FontWeight="SemiBold"
-							Classes="shadowbutton"/>
-					
 					<Grid HorizontalAlignment="Left" Width="370" Grid.Row="4">
 						<Grid.ColumnDefinitions>
 							<ColumnDefinition Width="0.4*"/>
@@ -173,15 +168,6 @@
 						<Button Command="{Binding OpenSelectConfigPageAction}"
 								HorizontalAlignment="Stretch" Classes="shadowbutton">
 							<TextBlock Text="{DynamicResource Settings}" FontWeight="SemiBold" />
-						</Button>
-
-						<Button Grid.Column="2" HorizontalAlignment="Stretch" Classes="shadowbutton">
-							<Grid>
-								<TextBlock Text="{DynamicResource WIP}" FontWeight="SemiBold"/>
-
-								<TextBlock FontSize="12" VerticalAlignment="Center"
-										   TextAlignment="Right" Text="{DynamicResource Playing}"/>
-							</Grid>
 						</Button>
 					</Grid>
 				</Grid>

@@ -55,22 +55,6 @@ namespace wonderlab.ViewModels.Windows {
                     DownloadApiType.Mojang => APIManager.Mojang,
                     _ => APIManager.Mcbbs,
                 };
-
-
-                var result = await UpdateUtils.GetLatestVersionInfoAsync();
-                if (UpdateUtils.Check(result)) {
-                    string time = DateTime.Parse(result["time"].GetValue<string>())
-                        .ToString("yyyy-MM-dd HH:MM:ff");
-
-                    Dispatcher.Post(async () => {
-                        UpdateDialogContent content = new(result,
-                            string.Join("\n", result["messages"].AsArray()),
-                            $"于 {time} 发布");
-
-                        await Task.Delay(500);
-                        await DialogHost.Show(content, "dialogHost");
-                    });
-                }
             });
         }
 

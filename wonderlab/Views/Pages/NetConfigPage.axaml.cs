@@ -20,10 +20,6 @@ namespace wonderlab.Views.Pages {
             {
                 official.IsChecked = true;
             }
-            else
-            {
-                mcbbs.IsChecked = true;
-            }
         }
     }
 }
