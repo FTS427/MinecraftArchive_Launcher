@@ -11,8 +11,6 @@ namespace MinecraftArchive.Class.Utils {
 
         private static readonly PerformanceCounter MemoryUsagePercentageCounter = new("Memory", "% Committed Bytes In Use");
 
-        public static bool IsMacOS => RuntimeInformation.IsOSPlatform(OSPlatform.OSX);
-
         public static bool IsWindows11 => (RuntimeInformation.IsOSPlatform(OSPlatform.Windows) && Environment.OSVersion.Version.Build >= 22000);
 
         public static bool IsWindows => RuntimeInformation.IsOSPlatform(OSPlatform.Windows);
@@ -22,10 +20,8 @@ namespace MinecraftArchive.Class.Utils {
         public static string GetPlatformName() {
             if (IsWindows) {
                 return "Windows";
-            } else if (IsLinux) {
-                return "Linux";
             } else {
-                return "MacOS";
+                return "Linux";
             }
         }
 

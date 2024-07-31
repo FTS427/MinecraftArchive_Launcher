@@ -183,10 +183,6 @@ namespace MinecraftArchive.ViewModels.Pages {
             }
 
             IEnumerable<string> GetAdvancedArguments() {
-                if (SystemUtils.IsMacOS) {
-                    yield return $"-Xdock:name=Minecraft {gameCore!.Source ?? gameCore.InheritsFrom}";
-                    yield return $"-Xdock:icon={Path.Combine(gameCore.Root.FullName, "assets", "objects", "f0", "f00657542252858a721e715a2e888a9226404e35")}";
-                }
 
                 if (!string.IsNullOrEmpty(GlobalResources.LaunchInfoData.JvmArgument)) {
                     yield return GlobalResources.LaunchInfoData.JvmArgument;

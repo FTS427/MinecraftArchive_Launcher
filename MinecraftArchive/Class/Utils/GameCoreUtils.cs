@@ -117,23 +117,10 @@ namespace MinecraftArchive.Class.Utils {
         }
 
         public static DirectoryInfo GetOfficialGameCorePath() {
-            try {
-                if (SystemUtils.IsWindows) {
-                    return new(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), ".minecraft"));
-                } else if (SystemUtils.IsMacOS) {
-                    var parent = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-                    return new(Path.Combine(parent, "Library", "Application Support", "minecraft"));
-                } else {
-                    return new(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), ".minecraft"));
-                }
-            }
-            catch {
-                var path = Path.Combine(Environment.CurrentDirectory, SystemUtils.IsMacOS ? "minecraft" : ".minecraft");
-                if (!path.IsDirectory()) {
-                    Directory.CreateDirectory(path);
-                }
-
-                return new(path);
+            if (SystemUtils.IsWindows) {
+                return new(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), ".minecraft"));
+            } else {
+                return new(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), ".minecraft"));
             }
         }
 

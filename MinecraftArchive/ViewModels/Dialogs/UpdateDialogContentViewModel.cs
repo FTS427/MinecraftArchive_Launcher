@@ -31,13 +31,6 @@ namespace MinecraftArchive.ViewModels.Dialogs {
         [Reactive]
         public double UpdateProgress { get; set; }
 
-        public void UpdateAction() {
-            Update = true;
-            UpdateUtils.UpdateAsync(VersionInfo, x => {
-                UpdateProgress = x * 100;
-            });
-        }
-
         public void CloseAction() {
             DialogHost.Close("dialogHost");
         }

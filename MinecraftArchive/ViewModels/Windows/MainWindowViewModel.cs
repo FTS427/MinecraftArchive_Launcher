@@ -79,7 +79,7 @@ namespace MinecraftArchive.ViewModels.Windows {
         [Reactive]
         public bool IsLoadAcrylicBackground { get; set; } = false;
 
-        public string Version => "1.2.8";
+        public string Version => "1.2.8.4";
 
         private void OnPropertyChanged(object? sender, PropertyChangedEventArgs e) {
             if (e.PropertyName == nameof(CurrentPage)) {
