@@ -93,7 +93,11 @@ jobs:
       uses: Blessing-Studio/get-csproj-version@main
       with:
         file: wonderlab/wonderlab.csproj
-
+    - name: qwq
+      run: |
+          ls . -a -l
+          apt install tree
+          tree .
     - name: Create Release
       if: github.event_name != 'pull_request' 
       uses: softprops/action-gh-release@v1
