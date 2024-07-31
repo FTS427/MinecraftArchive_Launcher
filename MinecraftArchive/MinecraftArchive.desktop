@@ -1,10 +1,10 @@
 [Desktop Entry]
-Name=WonderLab
+Name=MinecraftArchive
 Type=Application
 Terminal=false
-Exec=/usr/bin/WonderLab.Override/start.sh
-Icon=/usr/share/icons/wonderlab.png
+Exec=/usr/bin/MinecraftArchive/start.sh
+Icon=/usr/share/icons/MinecraftArchive.png
 Categories=Game;ActionGame;AdventureGame;Simulation;
-Keywords=game;minecraft;launcher;mc;Ddggdd135;Xilu;
-Comment=Next generation cross-platform Minecraft launcher
-Comment[zh_CN]=下一代跨平台 Minecraft 启动器
+Keywords=game;minecraft;launcher;mc;
+Comment=A Minecraft launcher with Blue Archive theme base on WonderLab.Override
+Comment[zh_CN]=一个带有 Blue Archive 样式 UI 基于 WonderLab.Override 的 Minecraft 启动器
