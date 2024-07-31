@@ -57,7 +57,7 @@ jobs:
       with:
         file: wonderlab/wonderlab.csproj
     - name: Build
-      run: pupnet --runtime linux-x64 --kind appimage -y -o wonderlab-${{ steps.package_version.outputs.version }}-linux-x64.AppImage
+      run: pupnet --runtime linux-x64 --kind appimage -y -o wonderlab.${{ steps.package_version.outputs.version }}.linux-x64.AppImage
     - name: Upload build artifacts
       uses: actions/upload-artifact@v3
       with:
