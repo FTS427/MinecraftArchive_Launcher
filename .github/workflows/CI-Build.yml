@@ -93,11 +93,7 @@ jobs:
       uses: Blessing-Studio/get-csproj-version@main
       with:
         file: wonderlab/wonderlab.csproj
-    - name: qwq
-      run: |
-          ls . -a -l
-          sudo apt install tree
-          tree .
+
     - name: Create Release
       if: github.event_name != 'pull_request' 
       uses: softprops/action-gh-release@v1
@@ -105,8 +101,8 @@ jobs:
         tag_name: ${{ steps.package_version.outputs.version }}
         name: "${{ steps.package_version.outputs.version }} Update"
         files: |
-          MinecraftArchive_Launcher/*.zip
-          MinecraftArchive_Launcher/*.AppImage
+              wonderlab.${{ steps.package_version.outputs.version }}.linux-x64.AppImage
+              wonderlab.${{ steps.package_version.outputs.version }}.win-x64.zip
 
   Delete_Artifacts:
     permissions: write-all
