@@ -96,15 +96,13 @@ jobs:
 
     - name: Create Release
       if: github.event_name != 'pull_request' 
-      uses: "marvinpinto/action-automatic-releases@latest"
+      uses: softprops/action-gh-release@v1
       with:
-        repo_token: "${{ secrets.GITHUB_TOKEN }}"
-        prerelease: false
-        automatic_release_tag: ${{ steps.package_version.outputs.version }}
-        title: "${{ steps.package_version.outputs.version }} Update"
+        tag_name: ${{ steps.package_version.outputs.version }}
+        name: "${{ steps.package_version.outputs.version }} Update"
         files: |
-            /home/runner/work/MinecraftArchive_Launcher/MinecraftArchive_Launcher/*.zip
-            /home/runner/work/MinecraftArchive_Launcher/MinecraftArchive_Launcher/*.AppImage
+          MinecraftArchive_Launcher/*.zip
+          MinecraftArchive_Launcher/*.AppImage
 
   Delete_Artifacts:
     permissions: write-all
