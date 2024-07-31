@@ -30,14 +30,12 @@ jobs:
       with:
         fetch-depth: 0
     - name: Build
-      run: |
-        dotnet build wonderlab/wonderlab.csproj -t:CreateZip --arch x64 --os win ${{ env.compile-flags }}
-        mv wonderlab\bin\Release\net8.0-windows\win-x64\wonderlab.${{ env.target-version }}.win-x64.zip wonderlab\bin\Release\net8.0-windows\win-x64\wonderlab-${{ env.target-version }}-win-x64.zip
+      run: dotnet build wonderlab/wonderlab.csproj -t:CreateZip --arch x64 --os win ${{ env.compile-flags }}
     - name: Upload build artifacts
       uses: actions/upload-artifact@v3
       with:
         name: Windows
-        path: wonderlab\bin\Release\net8.0-windows\win-x64\wonderlab-${{ env.target-version }}-win-x64.zip
+        path: wonderlab\bin\Release\${{env.target-version}}\win-x64\*.zip
 
   build_Linux:
     runs-on: ubuntu-latest
