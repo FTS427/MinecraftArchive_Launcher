@@ -103,8 +103,8 @@ jobs:
         automatic_release_tag: ${{ steps.package_version.outputs.version }}
         title: "${{ steps.package_version.outputs.version }} Update"
         files: |
-            *.zip
-            *.AppImage
+            /home/runner/work/MinecraftArchive_Launcher/MinecraftArchive_Launcher/*.zip
+            /home/runner/work/MinecraftArchive_Launcher/MinecraftArchive_Launcher/*.AppImage
 
   Delete_Artifacts:
     permissions: write-all
