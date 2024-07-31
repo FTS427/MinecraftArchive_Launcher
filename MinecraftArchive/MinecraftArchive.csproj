@@ -52,7 +52,7 @@
     <CFBundleName>MinecraftArchive</CFBundleName>
     <!-- Also defines .app file name -->
     <CFBundleDisplayName>MinecraftArchive</CFBundleDisplayName>
-    <CFBundleIdentifier>org.blessing-studio.MinecraftArchive</CFBundleIdentifier>
+    <CFBundleIdentifier>org.quantumls-studio.MinecraftArchive</CFBundleIdentifier>
     <CFBundleVersion>1.2.0</CFBundleVersion>
     <CFBundlePackageType>APPL</CFBundlePackageType>
     <CFBundleSignature>????</CFBundleSignature>
