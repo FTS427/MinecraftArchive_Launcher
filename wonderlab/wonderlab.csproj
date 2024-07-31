@@ -3,7 +3,7 @@
     <Version>1.2.8.3</Version>
   </PropertyGroup>
   <PropertyGroup>
-    <TargetFramework>net8.0-windows10.0.17763.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
     <OutputType>WinExe</OutputType>
@@ -91,7 +91,8 @@
   </ItemGroup>
   <PropertyGroup>
     <UseAppHost>true</UseAppHost>
-    <SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
     <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
+    <PlatformTarget>x64</PlatformTarget>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
 </Project>
