@@ -44,7 +44,7 @@
     <EmbeddedResource Include="Assets\ModpackInfos.json" />
     <AvaloniaResource Include="Assets\Icons\OptiFine.png" />
     <AvaloniaResource Include="Assets\Icons\defaultavatar.jpg" />
-    <AvaloniaResource Include="Assets\MinecraftArchive.icns">
+    <AvaloniaResource Include="Assets\AppIcons\MinecraftArchive.icns">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </AvaloniaResource>
   </ItemGroup>
@@ -63,13 +63,13 @@
     <NSHighResolutionCapable>true</NSHighResolutionCapable>
     <CFBundleShortVersionString>12.0.2.0</CFBundleShortVersionString>
     <SignAssembly>True</SignAssembly>
-    <ApplicationIcon>Assets\MinecraftArchive.ico</ApplicationIcon>
+    <ApplicationIcon>Assets\AppIcons\MinecraftArchive.ico</ApplicationIcon>
     <StartupObject>MinecraftArchive.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Assets\MinecraftArchive.ico" />
-    <Content Include="Assets\MinecraftArchive.ico" />
-    <EmbeddedResource Include="Assets\MinecraftArchive.png" CopyToPublishDirectory="PreserveNewest">
+    <EmbeddedResource Include="Assets\AppIcons\MinecraftArchive.ico" />
+    <Content Include="Assets\AppIcons\MinecraftArchive.ico" />
+    <EmbeddedResource Include="Assets\AppIcons\MinecraftArchive.png" CopyToPublishDirectory="PreserveNewest">
       <LinuxPath>/usr/share/icons/MinecraftArchive.png</LinuxPath>
     </EmbeddedResource>
   </ItemGroup>
