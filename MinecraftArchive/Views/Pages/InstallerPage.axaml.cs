@@ -16,7 +16,7 @@ using MinecraftArchive.ViewModels.Pages;
 
 namespace MinecraftArchive.Views.Pages {
     public partial class InstallerPage : UserControl {
-        public static InstallerPageViewModel ViewModel { get; set; }
+        public static InstallerPageViewModel? ViewModel { get; set; }
 
         public InstallerPage() {
             InitializeComponent();

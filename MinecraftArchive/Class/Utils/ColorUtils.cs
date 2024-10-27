@@ -1311,7 +1311,7 @@ public struct ColorUtils : IEquatable<ColorUtils> {
 }
 
 internal static class KnownColorTable {
-    private static Dictionary<ColorUtils, string> ColorTable;
+    private static Dictionary<ColorUtils, string>? ColorTable;
 
     public static string GetColorName(ColorUtils c) {
         InitColorTable();

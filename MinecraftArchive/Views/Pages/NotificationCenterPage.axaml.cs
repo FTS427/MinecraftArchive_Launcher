@@ -6,7 +6,7 @@ using MinecraftArchive.ViewModels.Pages;
 namespace MinecraftArchive.Views.Pages
 {
     public partial class NotificationCenterPage : UserControl {   
-        public static NotificationCenterPageViewModel ViewModel { get; set; }
+        public static NotificationCenterPageViewModel? ViewModel { get; set; }
 
         public NotificationCenterPage() {       
             InitializeComponent();

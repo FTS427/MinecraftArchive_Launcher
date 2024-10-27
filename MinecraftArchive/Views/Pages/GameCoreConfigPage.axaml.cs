@@ -6,7 +6,7 @@ using MinecraftArchive.ViewModels.Pages;
 namespace MinecraftArchive.Views.Pages {
     public partial class GameCoreConfigPage : UserControl {   
 
-        public static GameCoreConfigPageViewModel ViewModel { get; set; }
+        public static GameCoreConfigPageViewModel? ViewModel { get; set; }
         public GameCoreConfigPage() {       
             InitializeComponent();
             DataContext = ViewModel;

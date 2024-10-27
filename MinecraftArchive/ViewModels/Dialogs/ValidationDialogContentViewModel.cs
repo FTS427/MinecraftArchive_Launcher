@@ -14,7 +14,7 @@ using MinecraftArchive.Views.Pages;
 
 namespace MinecraftArchive.ViewModels.Dialogs {
     public class ValidationDialogContentViewModel : ViewModelBase {
-        private string ValidationLink;
+        private string? ValidationLink;
 
         [Reactive]
         public double AnimationWidth { get; set; } = 550;
@@ -38,19 +38,19 @@ namespace MinecraftArchive.ViewModels.Dialogs {
         public bool IsCodeLoaded { get; set; } = false;
 
         [Reactive]
-        public string DeviceCode { get; set; }
+        public string? DeviceCode { get; set; }
 
         [Reactive]
-        public string YggdrasilUri { get; set; }
+        public string? YggdrasilUri { get; set; }
 
         [Reactive]
-        public string Email { get; set; }
+        public string? Email { get; set; }
 
         [Reactive]
-        public string Password { get; set; }
+        public string? Password { get; set; }
 
         [Reactive]
-        public string UserName { get; set; }
+        public string? UserName { get; set; }
 
         public async void GoMicrosoftAuthAction() {
             AnimationWidth = 180;

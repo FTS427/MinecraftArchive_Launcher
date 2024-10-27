@@ -36,7 +36,7 @@
   <ItemGroup>
     <EmbeddedResource Include="Assets\downloadcenter.jpg" />
     <AvaloniaResource Include="Assets\Icons\NeoForged.png" />
-    <AvaloniaResource Include="Assets\y.jpg" />
+    <AvaloniaResource Include="Assets\background.jpg" />
     <AvaloniaResource Include="Assets\Icons\Block.png" />
     <AvaloniaResource Include="Assets\Icons\Forge.png" />
     <AvaloniaResource Include="Assets\Icons\Quilt.png" />

@@ -6,7 +6,7 @@ namespace MinecraftArchive.Views.Pages
 {
     public partial class WebModpackInfoPage : UserControl
     {
-        public static WebModpackInfoPageViewModel ViewModel { get; set; }
+        public static WebModpackInfoPageViewModel? ViewModel { get; set; }
         public WebModpackInfoPage() {       
             InitializeComponent();
             DataContext = ViewModel = new();

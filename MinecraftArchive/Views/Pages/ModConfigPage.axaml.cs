@@ -6,7 +6,7 @@ namespace MinecraftArchive.Views.Pages
 {
     public partial class ModConfigPage : UserControl
     {
-        public static ModConfigPageViewModel ViewModel { get; set; }
+        public static ModConfigPageViewModel? ViewModel { get; set; }
         public ModConfigPage()
         {
             InitializeComponent();

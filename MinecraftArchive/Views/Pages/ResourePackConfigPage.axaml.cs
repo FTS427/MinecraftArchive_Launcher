@@ -6,7 +6,7 @@ namespace MinecraftArchive.Views.Pages
 {
     public partial class ResourePackConfigPage : UserControl
     {
-        public static ResourePackConfigPageVM ViewModel { get; set; }
+        public static ResourePackConfigPageVM? ViewModel { get; set; }
         public ResourePackConfigPage()
         {
             InitializeComponent();

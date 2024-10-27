@@ -11,7 +11,7 @@ namespace MinecraftArchive.Views.Dialogs
 {
     public partial class GameInstallDialog : UserControl
     {
-        public static GameInstallDialogViewModel ViewModel { get; set; }
+        public static GameInstallDialogViewModel? ViewModel { get; set; }
         public GameInstallDialog() {       
             Initialized += this.DialogInitialized;
             InitializeComponent();

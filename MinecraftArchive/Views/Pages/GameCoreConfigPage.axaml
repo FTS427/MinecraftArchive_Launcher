@@ -214,7 +214,7 @@
 					BorderThickness="2"
 		            Height="250">
 					<Border.Background>
-						<ImageBrush Source="/Assets/y.jpg" Stretch="UniformToFill"/>
+						<ImageBrush Source="/Assets/background.jpg" Stretch="UniformToFill"/>
 					</Border.Background>
 
 					<StackPanel Margin="-20" VerticalAlignment="Bottom" Spacing="10"

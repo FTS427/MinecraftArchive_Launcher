@@ -11,15 +11,15 @@ using System.Threading.Tasks;
 
 namespace MinecraftArchive.Class.Models {
     public class ModLoaderModel {
-        public string GameCoreVersion { get; set; }
+        public string? GameCoreVersion { get; set; }
 
-        public string Id { get; set; }
+        public string? Id { get; set; }
 
         public ModLoaderType ModLoaderType { get; set; }
 
         public string ModLoader => ModLoaderType.ToString();
 
-        public object ModLoaderBuild { get; set; }
+        public object? ModLoaderBuild { get; set; }
 
         public DateTime Time { get; set; }
 

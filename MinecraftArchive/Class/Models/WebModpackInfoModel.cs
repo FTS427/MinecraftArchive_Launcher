@@ -8,8 +8,8 @@ using System.Threading.Tasks;
 namespace MinecraftArchive.Class.Models
 {
     public class WebModpackInfoModel {   
-        [JsonPropertyName("En")] public string CurseForgeId { get; set; }
-        [JsonPropertyName("Zh")] public string Chinese { get; set; }
+        [JsonPropertyName("En")] public string? CurseForgeId { get; set; }
+        [JsonPropertyName("Zh")] public string? Chinese { get; set; }
         [JsonPropertyName("MCModWikiId")] public int McModId { get; set; }
         [JsonPropertyName("MCBBSId")] public int McbbsId { get; set; }
     }

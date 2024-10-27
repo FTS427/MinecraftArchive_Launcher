@@ -19,7 +19,7 @@ namespace MinecraftArchive;
 
 public partial class App : Application {
     public static MainWindow CurrentWindow { get; protected set; } = null!;
-    public static Logger Logger { get; protected set; }
+    public static Logger? Logger { get; protected set; }
 
     public override void Initialize() {
         AvaloniaXamlLoader.Load(this);

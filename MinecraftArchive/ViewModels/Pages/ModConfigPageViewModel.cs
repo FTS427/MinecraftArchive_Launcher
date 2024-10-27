@@ -50,6 +50,6 @@ namespace MinecraftArchive.ViewModels.Pages {
         [Reactive]
         public ObservableCollection<ModPackViewData> ModPacks { get; set; } = new();
 
-        public static ModPackUtil Toolkit { get; set; }
+        public static ModPackUtil? Toolkit { get; set; }
     }
 }

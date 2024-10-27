@@ -5,7 +5,7 @@ using MinecraftArchive.ViewModels.Pages;
 namespace MinecraftArchive.Views.Pages
 {
     public partial class ConsolePage : UserControl {
-        public static ConsolePageViewModel ViewModel { get; set; }
+        public static ConsolePageViewModel? ViewModel { get; set; }
 
         public ConsolePage() {
             InitializeComponent();

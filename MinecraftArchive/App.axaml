@@ -3,12 +3,13 @@
              x:Class="MinecraftArchive.App"
 			 xmlns:c="using:MinecraftArchive.Views.Converters"
 			 xmlns:dialogHostAvalonia="clr-namespace:DialogHostAvalonia;assembly=DialogHost.Avalonia"
-			 RequestedThemeVariant="Light">
+			 RequestedThemeVariant="Default">
              <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
 	<Application.Styles>
 		<FluentTheme/>
 		<dialogHostAvalonia:DialogHostStyles />
 		<StyleInclude Source="avares://MinecraftArchive.Control/ImprotStyles.axaml"/>
+		
 		<Style Selector="ProgressBar /template/ Border#PART_Indicator">
 			<Setter Property="Transitions">
 				<Transitions>
@@ -30,6 +31,7 @@
 		<Style Selector="ContextMenu:open">
 			<Setter Property="Opacity" Value="0.5"/>
 		</Style>
+	
 	</Application.Styles>
 
 	<Application.Resources>

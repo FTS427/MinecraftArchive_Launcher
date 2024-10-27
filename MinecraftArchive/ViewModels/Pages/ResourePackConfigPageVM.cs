@@ -38,6 +38,6 @@ namespace MinecraftArchive.ViewModels.Pages {
         [Reactive]
         public ObservableCollection<ResourcePack> ResourcePacks { get; set; } = new();
 
-        public static ResourcePackUtil Toolkit { get; set; }
+        public static ResourcePackUtil? Toolkit { get; set; }
     }
 }

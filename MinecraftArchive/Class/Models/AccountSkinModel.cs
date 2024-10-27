@@ -8,39 +8,39 @@ using System.Threading.Tasks;
 namespace MinecraftArchive.Class.Models {
     public class AccountSkinModel {
         [JsonPropertyName("id")]
-        public string Id { get; set; }
+        public string? Id { get; set; }
 
         [JsonPropertyName("name")]
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         [JsonPropertyName("properties")]
-        public List<SkinInfo> Properties { get; set; }
+        public List<SkinInfo>? Properties { get; set; }
     }
 
     public class SkinInfo {
         [JsonPropertyName("name")]
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         [JsonPropertyName("value")]
-        public string Value { get; set; }
+        public string? Value { get; set; }
     }
 
     public class SKIN {
         [JsonPropertyName("url")]
-        public string Url { get; set; }
+        public string? Url { get; set; }
     }
 
     public class CAPE {
         [JsonPropertyName("url")]
-        public string Url { get; set; }
+        public string? Url { get; set; }
     }
 
     public class Textures {
         [JsonPropertyName("SKIN")]
-        public SKIN Skin { get; set; }
+        public SKIN? Skin { get; set; }
 
         [JsonPropertyName("CAPE")]
-        public CAPE Cape { get; set; }
+        public CAPE? Cape { get; set; }
     }
 
     public class SkinMoreInfo {
@@ -48,12 +48,12 @@ namespace MinecraftArchive.Class.Models {
         public long TimeStamp { get; set; }
 
         [JsonPropertyName("profileId")]
-        public string ProfileId { get; set; }
+        public string? ProfileId { get; set; }
 
         [JsonPropertyName("profileName")]
-        public string ProfileName { get; set; }
+        public string? ProfileName { get; set; }
 
         [JsonPropertyName("textures")]
-        public Textures Textures { get; set; }
+        public Textures? Textures { get; set; }
     }
 }

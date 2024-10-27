@@ -11,25 +11,25 @@ namespace MinecraftArchive.Class.Models
 {
     public class UserModel {
         [JsonPropertyName("uuid")]
-        public string Uuid { get; set; }
+        public string? Uuid { get; set; }
 
         [JsonPropertyName("userName")]
-        public string UserName { get; set; }
+        public string? UserName { get; set; }
 
         [JsonPropertyName("userToken")]
-        public string UserToken { get; set; }
+        public string? UserToken { get; set; }
 
         [JsonPropertyName("accessToken")]
-        public string AccessToken { get; set; }
+        public string? AccessToken { get; set; }
 
         [JsonPropertyName("yggdrasilUrl")]
-        public string YggdrasilUrl { get; set; }
+        public string? YggdrasilUrl { get; set; }
 
         [JsonPropertyName("email")]
-        public string Email { get; set; }
+        public string? Email { get; set; }
 
         [JsonPropertyName("password")]
-        public string Password { get; set; }
+        public string? Password { get; set; }
 
         [JsonPropertyName("userType")]
         public AccountType UserType { get; set; } = AccountType.Offline;

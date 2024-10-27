@@ -10,7 +10,7 @@ using MinecraftArchive.Class.ViewData;
 namespace MinecraftArchive.Views.Pages {
     public partial class HomePage : UserControl
     {
-        public static HomePageViewModel ViewModel { get; set; }
+        public static HomePageViewModel? ViewModel { get; set; }
         public HomePage()
         {
             InitializeComponent();

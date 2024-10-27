@@ -5,7 +5,7 @@ using System.Collections.Generic;
 namespace MinecraftArchive.Class.Models
 {
     public record ServerInfoModel {   
-        public PingPayload Response { get; set; }
+        public PingPayload? Response { get; set; }
 
         public long Latency { get; set; }
     }
@@ -18,30 +18,30 @@ namespace MinecraftArchive.Class.Models
         public int Online { get; set; }
 
         [JsonPropertyName("sample")]
-        public List<Player> Sample { get; set; }
+        public List<Player>? Sample { get; set; }
     }
 
     public record PingPayload {   
         [JsonPropertyName("version")]
-        public VersionPayload Version { get; set; }
+        public VersionPayload? Version { get; set; }
 
         [JsonPropertyName("players")]
-        public PlayersPayload Players { get; set; }
+        public PlayersPayload? Players { get; set; }
 
         [JsonPropertyName("description")]
-        public object Description { get; set; }
+        public object? Description { get; set; }
 
         [JsonPropertyName("modinfo")]
-        public ServerPingModInfo ModInfo { get; set; }
+        public ServerPingModInfo? ModInfo { get; set; }
 
     }
 
     public record Player {   
         [JsonPropertyName("name")]
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         [JsonPropertyName("id")] 
-        public string Id { get; set; }
+        public string? Id { get; set; }
     }
 
     public record VersionPayload {   
@@ -49,22 +49,22 @@ namespace MinecraftArchive.Class.Models
         public int Protocol { get; set; }
 
         [JsonPropertyName("name")] 
-        public string Name { get; set; }
+        public string? Name { get; set; }
     }
 
     public record ServerPingModInfo {   
         [JsonPropertyName("type")]
-        public string Type { get; set; }
+        public string? Type { get; set; }
 
         [JsonPropertyName("modList")] 
-        public List<ModInfo> ModList { get; set; }
+        public List<ModInfo>? ModList { get; set; }
     }
 
     public record ModInfo {
         [JsonPropertyName("modid")]
-        public string ModId { get; set; }
+        public string? ModId { get; set; }
 
         [JsonPropertyName("version")] 
-        public string Version { get; set; }
+        public string? Version { get; set; }
     }
 }

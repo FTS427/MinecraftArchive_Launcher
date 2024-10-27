@@ -12,24 +12,24 @@ namespace MinecraftArchive.Class.Models
         public int FormatVersion { get; set; }
 
         [JsonPropertyName("game")]
-        public string Game { get; set; }
+        public string? Game { get; set; }
 
         [JsonPropertyName("versionId")]
-        public string VersionId { get; set; }
+        public string? VersionId { get; set; }
 
         [JsonPropertyName("name")]
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         [JsonPropertyName("files")]
-        public IEnumerable<Files> Files { get; set; }
+        public IEnumerable<Files>? Files { get; set; }
 
         [JsonPropertyName("dependencies")]
-        public Dependencies Dependencies { get; set; }
+        public Dependencies? Dependencies { get; set; }
     }
 
     public class Dependencies {      
         [JsonPropertyName("minecraft")]
-        public string Minecraft { get; set; }
+        public string? Minecraft { get; set; }
 
         [JsonPropertyName("quilt-loader")]
         public string QuiltLoader { get; set; } = string.Empty;
@@ -43,32 +43,32 @@ namespace MinecraftArchive.Class.Models
         public int FileSize { get; set; }
 
         [JsonPropertyName("path")]
-        public string Path { get; set; }
+        public string? Path { get; set; }
 
         [JsonPropertyName("hashes")]
-        public Hashes Hashes { get; set; }
+        public Hashes? Hashes { get; set; }
 
         [JsonPropertyName("env")]
-        public Env Env { get; set; }
+        public Env? Env { get; set; }
 
         [JsonPropertyName("downloads")]
-        public string[] Downloads { get; set; }
+        public string[]? Downloads { get; set; }
 
     }
 
     public class Hashes {
         [JsonPropertyName("sha1")]
-        public string Sha1 { get; set; }
+        public string? Sha1 { get; set; }
 
         [JsonPropertyName("sha512")]
-        public string Sha512 { get; set; }
+        public string? Sha512 { get; set; }
     }
 
     public class Env {
         [JsonPropertyName("client")]
-        public string Client { get; set; }
+        public string? Client { get; set; }
 
         [JsonPropertyName("server")]
-        public string Server { get; set; }
+        public string? Server { get; set; }
     }
 }

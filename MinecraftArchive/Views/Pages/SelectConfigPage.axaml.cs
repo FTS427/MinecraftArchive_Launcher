@@ -7,7 +7,7 @@ using MinecraftArchive.ViewModels.Pages;
 namespace MinecraftArchive.Views.Pages
 {
     public partial class SelectConfigPage : UserControl {
-        public static SelectConfigPageViewModel ViewModel { get; set; }
+        public static SelectConfigPageViewModel? ViewModel { get; set; }
 
         public SelectConfigPage() {       
             InitializeComponent();
