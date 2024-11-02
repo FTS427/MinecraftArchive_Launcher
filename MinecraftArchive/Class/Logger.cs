@@ -11,7 +11,7 @@ namespace MinecraftArchive.Class {
     public class Logger {
         private List<string> Logs = new();
 
-        private readonly string LogsPath = Path.Combine(Directory.GetCurrentDirectory(), "logs");
+        private readonly string LogsPath = Path.Combine(Directory.GetCurrentDirectory(), ".log");
 
         public Logger Log(string message) {
             string log = $"[{SystemUtils.GetPlatformName()}] {message}";
@@ -21,21 +21,21 @@ namespace MinecraftArchive.Class {
         }
 
         public Logger Info(string message) {
-            string log = $"[{SystemUtils.GetPlatformName()}][Info] {message}";
+            string log = $"[{SystemUtils.GetPlatformName()}][II] {message}";
             Logs.Add(log);
             Trace.WriteLine(log);
             return this;
         }
 
         public Logger Error(string message) {
-            string log = $"[{SystemUtils.GetPlatformName()}][Error] {message}";
+            string log = $"[{SystemUtils.GetPlatformName()}][EE] {message}";
             Logs.Add(log);
             Trace.WriteLine(log);
             return this;
         }
 
         public Logger Warning(string message) {
-            string log = $"[{SystemUtils.GetPlatformName()}][Warn] {message}";
+            string log = $"[{SystemUtils.GetPlatformName()}][WW] {message}";
             Logs.Add(log);
             Trace.WriteLine(log);
             return this;
@@ -48,7 +48,7 @@ namespace MinecraftArchive.Class {
                 Environment.Exit(0);
             };
 
-            return logger.Info("日志记录器已加载");
+            return logger.Info("Logger has been loaded");
         }
 
         public async ValueTask EncapsulateLogsToFileAsync() {
@@ -60,7 +60,7 @@ namespace MinecraftArchive.Class {
             }
 
             var today = DateTime.Now;
-            await File.WriteAllLinesAsync(Path.Combine(LogsPath, $"LauncherLog{today:yyyy-MM-dd-HH-mm-ss}.log"), Logs);
+            await File.WriteAllLinesAsync(Path.Combine(LogsPath, $"{today:yyyy-MM-dd-HH-mm-ss}.log"), Logs);
         }
     }
 }
