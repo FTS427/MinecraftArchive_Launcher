@@ -69,7 +69,7 @@ namespace MinecraftArchive.Class.ViewData {
                 LeftLeg = BitmapUtils.CropLeftLegBitmap(skin.ToImage()).ToBitmap();
             }
             catch (Exception ex) {
-                Trace.WriteLine($"[错误] {ex}");
+                Trace.WriteLine($"[EE] {ex}");
             }
         }
 
@@ -77,13 +77,13 @@ namespace MinecraftArchive.Class.ViewData {
             using var result = await $"https://sessionserver.mojang.com/session/minecraft/profile/{uuid}"
                 .GetAsync();
             var json = await result.GetStringAsync();
-            $"返回的 Json 信息如下：{json}".ShowLog();
+            $"Json returned: {json}".ShowLog();
 
             var skinjson = Encoding.UTF8.GetString(Convert.FromBase64String(json.ToJsonEntity<AccountSkinModel>().Properties.First().Value));
             $"皮肤 Base64 解码的 Json 信息如下：{skinjson}".ShowLog();
 
             var url = skinjson.ToJsonEntity<SkinMoreInfo>().Textures.Skin.Url;
-            $"皮肤的链接如下：{url}".ShowLog();
+            $"skin's url is: {url}".ShowLog();
             return url;
         }
 
