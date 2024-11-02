@@ -36,7 +36,7 @@ public partial class App : Application {
 
             Manager.Current = CurrentWindow = (desktop.MainWindow as MainWindow)!;
             Logger = Logger.LoadLogger(CurrentWindow);
-            Logger.Info($"启动器版本：{AssemblyUtil.Version}");
+            Logger.Info($"Launcher version: {AssemblyUtil.Version}");
         }
 
         base.OnFrameworkInitializationCompleted();

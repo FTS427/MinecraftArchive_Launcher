@@ -38,7 +38,6 @@
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
 				<ResourceInclude Source="avares://MinecraftArchive.Control/IconPack.axaml"/>
-				<ResourceInclude Source="avares://MinecraftArchive/Assets/Strings/zh-cn.axaml"/>
 				<ResourceInclude Source="avares://MinecraftArchive.Control/Theme/LightResource.axaml"/>
 			</ResourceDictionary.MergedDictionaries>
 

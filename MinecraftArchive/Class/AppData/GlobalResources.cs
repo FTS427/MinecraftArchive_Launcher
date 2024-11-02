@@ -18,8 +18,6 @@ namespace MinecraftArchive.Class.AppData {
 
         public const string ClientId = "9fd44410-8ed7-4eb3-a160-9f1cc62c824c";
 
-        public const string WonderApi = "http://43.136.86.16:14514/api/";
-
         public const string MojangNewsApi = "https://launchercontent.mojang.com/news.json";
 
         public const string HitokotoApi = "https://v1.hitokoto.cn/";
