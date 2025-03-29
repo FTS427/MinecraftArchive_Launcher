@@ -1,5 +1,5 @@
-﻿using MinecraftLaunch.Modules.Models.Download;
-using MinecraftLaunch.Modules.Utils;
+﻿using MinecraftLaunch.Components.Downloader;
+using MinecraftLaunch.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;

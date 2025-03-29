@@ -1,6 +1,6 @@
 ﻿using Avalonia.Controls;
 using DialogHostAvalonia;
-using MinecraftLaunch.Modules.Enum;
+using MinecraftLaunch.Base.Enums;
 using MinecraftOAuth.Authenticator;
 using MinecraftOAuth.Module.Enum;
 using ReactiveUI.Fody.Helpers;

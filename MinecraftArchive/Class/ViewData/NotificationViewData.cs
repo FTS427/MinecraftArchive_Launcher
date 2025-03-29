@@ -1,5 +1,5 @@
 ﻿using Avalonia.Threading;
-using MinecraftLaunch.Modules.Installer;
+using MinecraftLaunch.Components.Installer;
 using ReactiveUI;
 using ReactiveUI.Fody.Helpers;
 using System;

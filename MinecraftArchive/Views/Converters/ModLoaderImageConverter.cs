@@ -1,6 +1,6 @@
 ﻿using Avalonia.Data.Converters;
 using Avalonia.Media.Imaging;
-using MinecraftLaunch.Modules.Enum;
+using MinecraftLaunch.Base.Enums;
 using System;
 using System.Collections.Generic;
 using System.Globalization;

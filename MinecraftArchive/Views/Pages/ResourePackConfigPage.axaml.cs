@@ -1,5 +1,5 @@
 using Avalonia.Controls;
-using MinecraftLaunch.Modules.Models.Launch;
+using MinecraftLaunch.Launch;
 using MinecraftArchive.ViewModels.Pages;
 
 namespace MinecraftArchive.Views.Pages

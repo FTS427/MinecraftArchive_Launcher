@@ -1,5 +1,5 @@
-﻿using MinecraftLaunch.Modules.Models.Auth;
-using MinecraftLaunch.Modules.Models.Launch;
+﻿using MinecraftLaunch.Components.Authenticator;
+using MinecraftLaunch.Launch;
 using ReactiveUI;
 using ReactiveUI.Fody.Helpers;
 using System.Collections.ObjectModel;

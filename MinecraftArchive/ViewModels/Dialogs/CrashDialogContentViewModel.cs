@@ -2,7 +2,7 @@
 using DialogHostAvalonia;
 using DynamicData.Kernel;
 using MinecraftLaunch.Modules.Analyzers;
-using MinecraftLaunch.Modules.Models.Launch;
+using MinecraftLaunch.Launch;
 using ReactiveUI.Fody.Helpers;
 using System;
 using System.Collections.Generic;

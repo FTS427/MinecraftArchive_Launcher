@@ -1,7 +1,7 @@
 ﻿using DynamicData;
-using MinecraftLaunch.Modules.Enum;
-using MinecraftLaunch.Modules.Models.Auth;
-using MinecraftLaunch.Modules.Utils;
+using MinecraftLaunch.Base.Enums;
+using MinecraftLaunch.Components.Authenticator;
+using MinecraftLaunch.Utilities;
 using System.Text.Json.Serialization;
 using System.Collections.Generic;
 using System.IO;

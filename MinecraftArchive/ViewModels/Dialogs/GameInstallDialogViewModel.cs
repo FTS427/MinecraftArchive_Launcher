@@ -1,9 +1,8 @@
 ﻿using MinecraftLaunch.Events;
-using MinecraftLaunch.Modules.Enum;
-using MinecraftLaunch.Modules.Installer;
-using MinecraftLaunch.Modules.Interface;
-using MinecraftLaunch.Modules.Models.Install;
-using MinecraftLaunch.Modules.Utils;
+using MinecraftLaunch.Base.Enums;
+using MinecraftLaunch.Components.Installer;
+using MinecraftLaunch.Base.Interfaces;
+using MinecraftLaunch.Utilities;
 using ReactiveUI;
 using ReactiveUI.Fody.Helpers;
 using System;

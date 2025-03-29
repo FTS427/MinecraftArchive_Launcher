@@ -1,6 +1,6 @@
 ﻿using Avalonia.Platform.Storage;
-using MinecraftLaunch.Modules.Models.Launch;
-using MinecraftLaunch.Modules.Utils;
+using MinecraftLaunch.Launch;
+using MinecraftLaunch.Utilities;
 using ReactiveUI.Fody.Helpers;
 using System;
 using System.Collections.Generic;

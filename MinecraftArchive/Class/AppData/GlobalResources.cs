@@ -1,6 +1,6 @@
 ﻿using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
-using MinecraftLaunch.Modules.Utils;
+using MinecraftLaunch.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Linq;

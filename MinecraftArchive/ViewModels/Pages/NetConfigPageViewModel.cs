@@ -1,4 +1,4 @@
-﻿using MinecraftLaunch.Modules.Models.Download;
+﻿using MinecraftLaunch.Components.Downloader;
 using ReactiveUI.Fody.Helpers;
 using System;
 using System.Collections.ObjectModel;

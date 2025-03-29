@@ -1,4 +1,4 @@
-﻿using MinecraftLaunch.Modules.Utils;
+﻿using MinecraftLaunch.Utilities;
 using System.Text.Json.Serialization;
 using System.Collections.Generic;
 

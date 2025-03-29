@@ -1,4 +1,4 @@
-﻿using MinecraftLaunch.Modules.Models.Download;
+﻿using MinecraftLaunch.Components.Downloader;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;

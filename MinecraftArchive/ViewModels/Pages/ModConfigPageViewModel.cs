@@ -1,6 +1,6 @@
-﻿using MinecraftLaunch.Modules.Models.Download;
-using MinecraftLaunch.Modules.Models.Launch;
-using MinecraftLaunch.Modules.Utils;
+﻿using MinecraftLaunch.Components.Downloader;
+using MinecraftLaunch.Launch;
+using MinecraftLaunch.Utilities;
 using ReactiveUI;
 using ReactiveUI.Fody.Helpers;
 using System;

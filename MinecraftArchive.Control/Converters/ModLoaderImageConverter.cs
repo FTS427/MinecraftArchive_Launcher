@@ -2,7 +2,7 @@
 using Avalonia.Media;
 using Avalonia.Media.Imaging;
 using Avalonia.Platform;
-using MinecraftLaunch.Modules.Enum;
+using MinecraftLaunch.Base.Enums;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;

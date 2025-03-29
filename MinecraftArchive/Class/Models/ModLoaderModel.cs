@@ -1,7 +1,6 @@
-﻿using MinecraftLaunch.Modules.Enum;
-using MinecraftLaunch.Modules.Installer;
-using MinecraftLaunch.Modules.Models.Install;
-using MinecraftLaunch.Modules.Models.Launch;
+﻿using MinecraftLaunch.Base.Enums;
+using MinecraftLaunch.Components.Installer;
+using MinecraftLaunch.Launch;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

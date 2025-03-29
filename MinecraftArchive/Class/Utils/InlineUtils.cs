@@ -1,8 +1,8 @@
 ﻿using Avalonia.Controls.Documents;
 using Avalonia.Media;
 using DynamicData;
-using MinecraftLaunch.Modules.Enum;
-using MinecraftLaunch.Modules.Models.Launch;
+using MinecraftLaunch.Base.Enums;
+using MinecraftLaunch.Launch;
 using ReactiveUI;
 using System;
 using System.Collections.Generic;

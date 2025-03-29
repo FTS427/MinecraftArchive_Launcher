@@ -1,5 +1,5 @@
 using Avalonia.Controls;
-using MinecraftLaunch.Modules.Models.Launch;
+using MinecraftLaunch.Launch;
 using System;
 using System.Collections.ObjectModel;
 using MinecraftArchive.Class.Utils;

@@ -1,5 +1,5 @@
-﻿using MinecraftLaunch.Modules.Models.Install;
-using MinecraftLaunch.Modules.Utils;
+﻿using MinecraftLaunch.Components.Installer;
+using MinecraftLaunch.Utilities;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;

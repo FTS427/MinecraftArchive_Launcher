@@ -1,7 +1,6 @@
 ﻿using Microsoft.CodeAnalysis;
-using MinecraftLaunch.Modules.Installer;
-using MinecraftLaunch.Modules.Models.Install;
-using MinecraftLaunch.Modules.Utils;
+using MinecraftLaunch.Components.Installer;
+using MinecraftLaunch.Utilities;
 using System;
 using System.Collections.Generic;
 using System.IO;

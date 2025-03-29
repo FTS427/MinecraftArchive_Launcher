@@ -1,5 +1,5 @@
 ﻿using DialogHostAvalonia;
-using MinecraftLaunch.Modules.Models.Auth;
+using MinecraftLaunch.Components.Authenticator;
 using ReactiveUI.Fody.Helpers;
 using System;
 using System.Collections.Generic;

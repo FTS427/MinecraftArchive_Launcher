@@ -37,6 +37,7 @@
     <PackageReference Include="ReactiveUI.Fody" Version="19.5.41" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MinecraftArchive.Core\MinecraftArchive.Core.csproj" />
+    <ProjectReference Include="..\MinecraftLaunch\MinecraftLaunch\MinecraftLaunch.csproj" />
+    <ProjectReference Include="..\MinecraftLaunch\MinecraftLaunch.Base\MinecraftLaunch.Base.csproj" />
   </ItemGroup>
 </Project>

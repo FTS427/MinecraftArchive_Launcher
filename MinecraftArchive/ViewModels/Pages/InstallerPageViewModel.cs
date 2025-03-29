@@ -1,10 +1,10 @@
 ﻿using Avalonia.Controls;
 using Avalonia.Threading;
 using MinecraftLaunch.Events;
-using MinecraftLaunch.Modules.Enum;
-using MinecraftLaunch.Modules.Installer;
-using MinecraftLaunch.Modules.Interface;
-using MinecraftLaunch.Modules.Models.Install;
+using MinecraftLaunch.Base.Enums;
+using MinecraftLaunch.Components.Installer;
+using MinecraftLaunch.Base.Interfaces;
+using MinecraftLaunch.Components.Installer;
 using ReactiveUI.Fody.Helpers;
 using System;
 using System.Collections.Generic;

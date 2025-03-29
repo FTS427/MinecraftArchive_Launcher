@@ -1,7 +1,7 @@
 ﻿using Avalonia.Media.Imaging;
 using MinecraftLaunch.Modules.Models.Http;
-using MinecraftLaunch.Modules.Models.Install;
-using MinecraftLaunch.Modules.Utils;
+using MinecraftLaunch.Components.Installer;
+using MinecraftLaunch.Utilities;
 using ReactiveUI.Fody.Helpers;
 using System;
 using System.Collections.Generic;

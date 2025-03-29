@@ -2,7 +2,7 @@ using Avalonia.Controls;
 using Avalonia.Interactivity;
 using Avalonia.Threading;
 using DynamicData;
-using MinecraftLaunch.Modules.Enum;
+using MinecraftLaunch.Base.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;

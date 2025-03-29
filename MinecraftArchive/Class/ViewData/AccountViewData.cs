@@ -1,8 +1,8 @@
 ﻿using Avalonia.Media.Imaging;
 using Avalonia.Threading;
 using Flurl.Http;
-using MinecraftLaunch.Modules.Enum;
-using MinecraftLaunch.Modules.Utils;
+using MinecraftLaunch.Base.Enums;
+using MinecraftLaunch.Utilities;
 using ReactiveUI.Fody.Helpers;
 using System;
 using System.Diagnostics;

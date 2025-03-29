@@ -1,5 +1,5 @@
-﻿using MinecraftLaunch.Modules.Models.Launch;
-using MinecraftLaunch.Modules.Utils;
+﻿using MinecraftLaunch.Launch;
+using MinecraftLaunch.Utilities;
 using System.Threading.Tasks;
 using MinecraftArchive.Class.AppData;
 using MinecraftArchive.Class.Utils;

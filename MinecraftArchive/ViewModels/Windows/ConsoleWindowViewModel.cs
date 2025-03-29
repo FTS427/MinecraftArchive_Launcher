@@ -2,7 +2,7 @@
 using Avalonia.Threading;
 using DynamicData;
 using MinecraftLaunch.Modules.Analyzers;
-using MinecraftLaunch.Modules.Interface;
+using MinecraftLaunch.Base.Interfaces;
 using ReactiveUI;
 using ReactiveUI.Fody.Helpers;
 using System;

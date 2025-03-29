@@ -1,5 +1,5 @@
-﻿using MinecraftLaunch.Modules.Models.Launch;
-using MinecraftLaunch.Modules.Utils;
+﻿using MinecraftLaunch.Launch;
+using MinecraftLaunch.Utilities;
 using System;
 using System.IO;
 using System.Text.Json;

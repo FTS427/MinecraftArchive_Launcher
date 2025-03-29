@@ -1,5 +1,5 @@
 ﻿using Avalonia.Media;
-using MinecraftLaunch.Modules.Models.Download;
+using MinecraftLaunch.Components.Downloader;
 using System.Text.Json.Serialization;
 using System;
 using System.Collections.Generic;

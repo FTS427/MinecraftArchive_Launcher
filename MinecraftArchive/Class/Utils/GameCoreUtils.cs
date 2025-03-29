@@ -1,8 +1,7 @@
-﻿using MinecraftLaunch.Modules.Installer;
-using MinecraftLaunch.Modules.Interface;
-using MinecraftLaunch.Modules.Models.Install;
-using MinecraftLaunch.Modules.Models.Launch;
-using MinecraftLaunch.Modules.Utils;
+﻿using MinecraftLaunch.Base.Interfaces;
+using MinecraftLaunch.Components.Installer;
+using MinecraftLaunch.Launch;
+using MinecraftLaunch.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;

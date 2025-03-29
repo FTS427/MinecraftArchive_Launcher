@@ -1,5 +1,5 @@
-﻿using MinecraftLaunch.Modules.Enum;
-using MinecraftLaunch.Modules.Models.Auth;
+﻿using MinecraftLaunch.Base.Enums;
+using MinecraftLaunch.Components.Authenticator;
 using System.Text.Json.Serialization;
 using System;
 using System.Collections.Generic;

@@ -1,5 +1,5 @@
 ﻿using Avalonia.Controls;
-using MinecraftLaunch.Modules.Models.Launch;
+using MinecraftLaunch.Launch;
 using ReactiveUI.Fody.Helpers;
 using System;
 using System.Collections.Generic;

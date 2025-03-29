@@ -5,7 +5,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Threading.Tasks;
 using MinecraftArchive.Class.Utils;
-using MinecraftLaunch.Modules.Utils;
+using MinecraftLaunch.Utilities;
 
 namespace MinecraftArchive.Class {
     public class Logger {

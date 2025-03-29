@@ -1,5 +1,5 @@
 using Avalonia.Controls;
-using MinecraftLaunch.Modules.Models.Install;
+using MinecraftLaunch.Components.Installer;
 using System.Collections.Generic;
 using System.Linq;
 using MinecraftArchive.Class.Models;

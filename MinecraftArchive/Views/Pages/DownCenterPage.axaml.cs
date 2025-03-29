@@ -1,7 +1,7 @@
 using Avalonia.Controls;
 using Avalonia.Controls.Primitives;
 using Avalonia.Interactivity;
-using MinecraftLaunch.Modules.Models.Install;
+using MinecraftLaunch.Components.Installer;
 using System.Threading.Tasks;
 using MinecraftArchive.Class.AppData;
 using MinecraftArchive.Class.Enum;

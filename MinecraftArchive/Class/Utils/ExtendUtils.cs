@@ -1,6 +1,6 @@
-﻿using MinecraftLaunch.Modules.Enum;
-using MinecraftLaunch.Modules.Models.Auth;
-using MinecraftLaunch.Modules.Models.Launch;
+﻿using MinecraftLaunch.Base.Enums;
+using MinecraftLaunch.Components.Authenticator;
+using MinecraftLaunch.Launch;
 using SixLabors.ImageSharp.Formats.Png;
 using SixLabors.ImageSharp.PixelFormats;
 using SixLabors.ImageSharp;
@@ -24,7 +24,7 @@ using Avalonia.Markup.Xaml;
 using Avalonia;
 using MinecraftArchive.Class.Enum;
 using Avalonia.Platform.Storage;
-using MinecraftLaunch.Modules.Utils;
+using MinecraftLaunch.Utilities;
 using System.Text.Json;
 using Avalonia.Media;
 

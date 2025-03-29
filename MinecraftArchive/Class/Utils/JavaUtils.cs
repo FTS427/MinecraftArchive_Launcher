@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MinecraftArchive.Class.AppData;
-using MinecraftLaunch.Modules.Models.Launch;
+using MinecraftLaunch.Launch;
 using System.Runtime.Versioning;
-using MinecraftLaunch.Modules.Utils;
+using MinecraftLaunch.Utilities;
 
 namespace MinecraftArchive.Class.Utils {
     /// <summary>
