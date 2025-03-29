@@ -1,0 +1,6 @@
+[submodule "MinecraftLaunch"]
+	path = MinecraftLaunch
+	url = https://github.com/Lunova-Studio/MinecraftLaunch
+[submodule "Monet"]
+	path = Monet
+	url = https://github.com/Lunova-Studio/Monet
